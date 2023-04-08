@@ -1,0 +1,41 @@
+﻿.navbar {
+    display: flex;
+}
+
+.navigator {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 5px;
+}
+
+.navlink-container {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navlink {
+    text-decoration: none;
+    font-size: 15px;
+    color: #afafaf;
+}
+
+.navlink:hover {
+    color: #d2461c;
+}
+
+.interact-box {
+    flex: 1;
+}
+
+.login {
+    display: inline-block;
+    margin-left: 100px;
+    margin-right: 20px;
+}
+
+.shop-cart {
+    display: inline-block;
+}
+

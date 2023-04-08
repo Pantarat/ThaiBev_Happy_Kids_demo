@@ -1,0 +1,35 @@
+﻿.homepage {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.shop-all-button {
+    background-color: #343a40;
+    color: #ffffff;
+    border: none;
+    width: 150px;
+    height: 40px;
+}
+
+.fixed-socials {
+
+}
+
+.fixed-socials-images {
+    position: fixed;
+    height: 30px;
+    right: 50px;
+    border-radius: 20px;
+}
+
+#fb.fixed-socials-images {
+    top: 43%;
+}
+
+#ig.fixed-socials-images {
+    top: 50%;
+}
+
+#pin.fixed-socials-images {
+    top: 57%;
+}

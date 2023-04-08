@@ -1,0 +1,106 @@
+﻿.promo-pictures-banner {
+    margin: 0 auto;
+    background-color: #ffffff;
+    overflow: hidden;
+    position: relative; 
+    display: block;
+}
+
+.imgban {
+    height: 650px;
+    position: absolute;
+    top: 0px;
+}
+
+.imgbanbtn {
+    width: 40px;
+    height: 40px;
+    background-color: #000;
+    border-radius: 4px;
+    position: absolute;
+    top: 50%;
+    z-index: 2000;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.imgbanbtn:hover {
+    opacity: 0.9;
+}
+
+.imgbanbtn-prev {
+    left: 5%;
+    background-size: 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.imgbanbtn-next {
+    right: 5%;
+    background-size: 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.imgban {
+    z-index: 0;
+    opacity: 1;
+}
+
+#imgban1 {
+    position: absolute;
+    left: 0;
+}
+
+#imgban2 {
+    position: absolute;
+    left: 0;
+}
+
+#imgban3 {
+    position: relative;
+    background-image: url("../assets/Banner3.png");
+}
+
+.banner-text {
+    top: 40%;
+    left: 50%;
+    position: absolute;
+    font-size: 50px;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.shop-now-button {
+    top: 60%;
+    left: 50%;
+    position: absolute;
+    font-size: 15px;
+    transform: translate(-50%, -50%);
+    width: 15%;
+    height: 10%;
+    background-color: #00000000;
+    color: black;
+    transition-duration: 1s;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.shop-now-button:hover {
+    background-color: #000000ff;
+    color: #ffffff;
+}
+
+.banner-choose-button-container {
+    position: absolute;
+    height: 2.5%;
+    width: 10%;
+    bottom: 10%;
+    left: 45%;
+    justify-content: space-between;
+    display: flex;
+}
+
+.banner-choose-button {
+
+}

@@ -1,0 +1,52 @@
+﻿.happy-kids-titlecard {
+    height: 130px;
+    text-align: center;
+    padding: 40px;
+    font-size: 50px;
+}
+
+.footer-ofpage {
+    border-top: solid;
+    padding-top: 30px;
+    padding-bottom: 100px;
+}
+
+.footer-head {
+    text-align: center;
+    font-weight: normal;
+    font-size: 28px;
+    padding: 20px;
+}
+
+.footer-more-details {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin: auto;
+}
+
+.navlink-footer {
+    text-decoration: none;
+    font-size: 15px;
+    color: #afafaf;
+    display: block;
+}
+
+.navlink-footer:hover {
+    color: #afafaf;
+}
+
+.footer-pages {
+    width: 300px;
+    text-align: center;
+}
+
+.contacts-container {
+    width: 100px;
+    text-align: center;
+}
+
+.footer-extra-pages {
+    width: 300px;
+    text-align: center;
+}

@@ -1,0 +1,17 @@
+﻿.new-arrival {
+    padding-bottom: 100px;
+}
+
+.new-arrival-header {
+    text-align: center;
+    font-size: 30px;
+    font-weight: normal;
+    padding: 50px;
+}
+
+.new-arrival-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 350px);
+    grid-column-gap: 20px;
+    grid-auto-flow: column;
+}
