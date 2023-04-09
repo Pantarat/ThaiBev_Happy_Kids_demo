@@ -6,25 +6,28 @@ namespace Happy_kids_website.Business
     {
         public List<Product> GetProducts()
         {
-            return new List<Product>
+            return new List<Product>()
             {
-                new Product
-                {
-                    ProductID = "sg111",
-                    Type = "bodysuit",
-                    Price = 19.99,
-                    Colors = {new Color
-                    {
-                        Name = "Magenta",
-                        ImageUrl = "/path1"
+                new Product(
+                    "sg111",
+                    "bodysuit",
+                    19.99,
+                    new List<Color>() {
+                        new Color("black","/path1"),
+                        new Color("blue","/path2")
                     },
-                    new Color
-                    {
-                        Name = "Black",
-                        ImageUrl = "/path2"
-                    } },
-                    Sizes = {"1 month","2 month"}
-                }
+                    new List<string>() {"size1","size2"}
+                    ),
+                new Product(
+                    "Product2",
+                    "shirt",
+                    29.99,
+                    new List<Color>() {
+                        new Color("black","/path3"),
+                        new Color("blue","/path4")
+                    },
+                    new List<string>() {"size3","size4"}
+                    )
             };
         }
     }

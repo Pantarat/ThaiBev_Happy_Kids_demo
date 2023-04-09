@@ -18,5 +18,14 @@ namespace Happy_kids_website.Database.Models
         public List<Color> Colors { get; set; }
 
         public List<string> Sizes { get; set; }
+
+        public Product(string ProductID, string Type, double Price, List<Color> Colors, List<string> Sizes)
+        {
+            this.ProductID = ProductID;
+            this.Type = Type;
+            this.Price = Price;
+            this.Colors = Colors;
+            this.Sizes = Sizes;
+        }
     }
 }

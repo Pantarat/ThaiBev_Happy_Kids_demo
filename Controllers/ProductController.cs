@@ -16,29 +16,9 @@ namespace Happy_kids_website.Controllers
         }
 
         [HttpGet]
-        public ActionResult<List<Product>>  Get() 
+        public ActionResult<List<Product>> GetProducts() 
         {
-            /*return Ok(_productServices.GetProducts());*/
-            var products = new List<Product>()
-            {
-                new Product()
-                {
-                    ProductID = "sg111",
-                    Type = "bodysuit",
-                    Price = 19.99,
-                    Colors = {new Color
-                    {
-                        Name = "Magenta",
-                        ImageUrl = "/path1"
-                    },
-                    new Color
-                    {
-                        Name = "Black",
-                        ImageUrl = "/path2"
-                    } },
-                    Sizes = {"1 month","2 month"}
-                }
-            };
+            var products = _productServices.GetProducts();
             return Ok(products);
         }
     }
