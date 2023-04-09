@@ -9,6 +9,8 @@ export class Product extends React.Component {
         super(props);
         this.state = {
             isProdPopupOpen: false,
+            products: [],
+            loading: true
         };
     }
 
@@ -20,11 +22,22 @@ export class Product extends React.Component {
         this.setState({ isProdPopupOpen: false });
     };
 
+    componentDidMount = () => {
+        this.populateProductsData();
+    }
+
     render() {
+        /*let contents = this.state.loading
+      ? <p><em>Loading...</em></p>
+      : FetchData.renderForecastsTable(this.state.products);*/
+
         return (
             <div className="product-container">
                 <img className="product-img" src={productImg} alt="product" />
                 <p className="product-txt">I'm a product</p>
+
+                <p>{ this.state.products }</p>
+
                 <p>{`${20.99}$`}</p>
                 <button className="add-to-cart-button" onClick={this.handleClick}>Add to Cart</button>
                 {this.state.isProdPopupOpen && (
@@ -54,5 +67,11 @@ export class Product extends React.Component {
                 )}
             </div>
         );
+    }
+
+    async populateProductsData() {
+        const response = await fetch('Product');
+        const data = await response.json();
+        this.setState({ products: data, loading: false });
     }
 }

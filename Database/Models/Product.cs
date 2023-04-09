@@ -4,6 +4,7 @@ using MongoDB.Bson;
 
 namespace Happy_kids_website.Database.Models
 {
+    [Serializable]
     public class Product
     {
         [BsonId]

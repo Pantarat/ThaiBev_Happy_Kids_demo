@@ -7,23 +7,9 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container. 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen(options =>
-{
-    options.SwaggerDoc("v1", new OpenApiInfo { Title = "My API", Version = "v1" });
-});
+builder.Services.AddSwaggerGen();
 
 builder.Services.AddTransient<IProductServices, ProductServices>();
-
-builder.Services.AddCors(options =>
-{
-    options.AddDefaultPolicy(builder =>
-    {
-        builder.AllowAnyOrigin();
-        builder.AllowAnyHeader();
-        builder.AllowAnyMethod();
-    });
-});
-
 
 builder.Services.AddControllersWithViews();
 
@@ -34,21 +20,14 @@ var app = builder.Build();
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
-    app.UseSwaggerUI(options =>
-    {
-        options.SwaggerEndpoint("/swagger/v1/swagger.json", "My API v1");
-    });
+    app.UseSwaggerUI();
 }
+
+app.MapControllers();
 
 app.UseStaticFiles();
 app.UseRouting();
 app.UseCors("AllowAllOrigins");
-app.UseCors("AllowReactJS");
-
-app.UseEndpoints(endpoints =>
-{
-    endpoints.MapControllers();
-});
 
 app.MapFallbackToFile("index.html"); ;
 

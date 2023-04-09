@@ -23,7 +23,7 @@ const AppRoutes = [
     },
     {
         path: '/swagger',
-        element: <SwaggerUI swaggerUrl="http://localhost:44413/swagger/v1/swagger.json" />
+        element: <SwaggerUI />
     }
 ];
 
