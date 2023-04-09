@@ -21,6 +21,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <_ContentIncludedByDefault Remove="database\allProducts.json" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="ClientApp\src\assets\productsImg\" />
   </ItemGroup>
 
@@ -28,6 +32,7 @@
     <PackageReference Include="Microsoft.AspNetCore.SpaProxy" Version="6.0.15" />
     <PackageReference Include="MongoDB.Bson" Version="2.19.1" />
     <PackageReference Include="MongoDB.Driver" Version="2.19.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
   </ItemGroup>
 

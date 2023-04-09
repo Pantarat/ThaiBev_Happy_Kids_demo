@@ -6,14 +6,18 @@ namespace Happy_kids_website.Database
 {
     public class DbClient : IDbClient
     {
-        private readonly IMongoDatabase _database;
+        private readonly IMongoCollection<Product> _products;
         public DbClient(IOptions<DbConfig> dbConfig)
         {
             var client = new MongoClient(dbConfig.Value.Connection_String);
-            _database = client.GetDatabase(dbConfig.Value.Database_Name);
+            var database = client.GetDatabase(dbConfig.Value.Database_Name);
+            _products = database.GetCollection<Product>(dbConfig.Value.Products_Collection_Name);
         }
 
-        public IMongoCollection<Product> GetProductsCollection() =>
-            _database.GetCollection<Product>("Products");
+        public IMongoCollection<Product> GetProductsCollection()
+        {
+            return _products; 
+        }
+            
     }
 }

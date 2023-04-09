@@ -1,0 +1,21 @@
+[
+  {
+    "ProductCode": "sw0001",
+    "Type": "bodysuit",
+    "Price": 19.99,
+    "Colors": [
+      {
+        "Name": "black",
+        "ImageUrl": "/path1"
+      },
+      {
+        "Name": "blue",
+        "ImageUrl": "/path2"
+      }
+    ],
+    "Sizes": [
+      "2 months",
+      "3 months"
+    ]
+  }
+]

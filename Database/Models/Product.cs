@@ -11,6 +11,8 @@ namespace Happy_kids_website.Database.Models
         [BsonRepresentation(BsonType.ObjectId)]
         public string ProductID { get; set; }
 
+        public string ProductCode { get; set; }
+
         public string Type { get; set; }
 
         public double Price { get; set; }
@@ -19,9 +21,10 @@ namespace Happy_kids_website.Database.Models
 
         public List<string> Sizes { get; set; }
 
-        public Product(string ProductID, string Type, double Price, List<Color> Colors, List<string> Sizes)
+        public Product(string ProductID, string ProductCode,string Type, double Price, List<Color> Colors, List<string> Sizes)
         {
             this.ProductID = ProductID;
+            this.ProductCode = ProductCode;
             this.Type = Type;
             this.Price = Price;
             this.Colors = Colors;
