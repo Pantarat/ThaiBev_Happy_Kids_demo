@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import CartIcon from '../assets/cart.svg';
 import '../styles/Cart.css';
 
 
@@ -8,7 +7,9 @@ export class Cart extends Component {
         super(props);
         this.state = {
             isPopupOpen: false,
-            itemsInCart: 0
+            itemsInCart: 0,
+            items: [],
+            totalPrice: 0
         };
     }
 
@@ -21,10 +22,11 @@ export class Cart extends Component {
     };
 
     render() {
+        console.log(this.props);
         return (
             <div>
                 <img
-                    src={CartIcon}
+                    src="./assets/cart.svg"
                     alt="Open Cart"
                     onClick={this.handleClick}
                     style={{ width:'20px'}}
@@ -33,7 +35,7 @@ export class Cart extends Component {
                     {this.state.itemsInCart }
                 </p>
                 {this.state.isPopupOpen && (
-                    <div className="cart-popup">
+                    <div className="cart-popup" id="mycartpopup">
                         <div className="cart-popup-content">
                             <span className="close-cart" onClick={this.handleClose}>
                                 &gt;

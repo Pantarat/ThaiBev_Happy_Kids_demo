@@ -1,9 +1,10 @@
 ﻿.promo-pictures-banner {
     margin: 0 auto;
     background-color: #ffffff;
-    overflow: hidden;
     position: relative; 
     display: block;
+    overflow: hidden;
+    width: 100%;
 }
 
 .imgban {
@@ -19,7 +20,7 @@
     border-radius: 4px;
     position: absolute;
     top: 50%;
-    z-index: 2000;
+    z-index: 2;
     opacity: 0.8;
     cursor: pointer;
 }
@@ -59,7 +60,6 @@
 
 #imgban3 {
     position: relative;
-    background-image: url("../assets/Banner3.png");
 }
 
 .banner-text {

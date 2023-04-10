@@ -1,9 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/PromotePicturesBanner.css';
-import banner1 from '../assets/Banner1.png';
-import banner2 from '../assets/Banner2.png';
-import banner3 from '../assets/Banner3.png';
 
 export class PromotePicturesBanner extends React.Component {
 
@@ -75,10 +72,10 @@ export class PromotePicturesBanner extends React.Component {
         return (
             <div className="promo-pictures-banner" id="promo-pictures-banner" onMouseEnter={ this.endLoop } onMouseLeave={ this.startLoop }>
                 <div className="imgbanbtn imgbanbtn-prev" id="imgbanbtn-prev" onClick={ this.previousBanner }></div>
-                <img className="imgban" id="imgban1" src={banner1} alt="banner1" />
-                <img className="imgban" id="imgban2" src={banner2} alt="banner2" />
+                <img className="imgban" id="imgban1" src='./assets/Banner1.png' alt="banner1" />
+                <img className="imgban" id="imgban2" src='./assets/Banner2.png' alt="banner2" />
                 <div className="imgban" id="imgban3">
-                    <img src={banner3} alt="banner3" />
+                    <img src='./assets/Banner3.png' alt="banner3" />
                     <p className="banner-text"> NEW COLLECTION  </p>
                     <Link to="/shop-collection">
                         <button className="shop-now-button" > SHOP NOW </button>

@@ -1,6 +1,7 @@
 ﻿using MongoDB.Bson.Serialization.Attributes;
 using MongoDB.Bson;
-
+using System.Diagnostics.CodeAnalysis;
+using System.Xml.Linq;
 
 namespace Happy_kids_website.Database.Models
 {
@@ -21,7 +22,7 @@ namespace Happy_kids_website.Database.Models
 
         public List<string> Sizes { get; set; }
 
-        public Product(string ProductID, string ProductCode,string Type, double Price, List<Color> Colors, List<string> Sizes)
+        public Product(string ProductID, string ProductCode, string Type, double Price, List<Color> Colors, List<string> Sizes)
         {
             this.ProductID = ProductID;
             this.ProductCode = ProductCode;

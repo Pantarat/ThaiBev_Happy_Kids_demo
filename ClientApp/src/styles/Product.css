@@ -77,3 +77,112 @@
 #product-id.product-body-text {
     margin-bottom: 30px;
 }
+
+.btn-container {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    box-sizing: border-box;
+}
+
+.btn {
+    display: block;
+    width: 20px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border-width: 1.5px;
+    border-color: #808080;
+    margin: auto;
+}
+
+#Blue.btn {
+    background-color: blue;
+}
+
+#Green.btn {
+    background-color: green;
+}
+
+#Terracota.btn {
+    background-color: #e3735e;
+}
+
+#Cream.btn {
+    background-color: mintcream;
+}
+
+#Light-Pink.btn {
+    background-color: lightpink;
+}
+
+#Peach.btn {
+    background-color: peachpuff;
+}
+
+#White.btn {
+    background-color: white;
+}
+
+.dropbtn {
+    background-color: white;
+    border: solid 1px;
+    border-color: #808080;
+    color: #808080;
+    font-size: 15px;
+    padding: 5px;
+    cursor: pointer;
+    width: 80%;
+    height: 30px;
+    text-align: left;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content button {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border: none;
+    background-color: white;
+    text-align: left;
+    width: 100%;
+}
+
+.dropdown-content button:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+}
+
+.add-to-cart-popup {
+    margin-top: 50px;
+    color: white;
+    display: block;
+    background-color: black;
+    width: 80%;
+    height: 40px;
+    justify-content: center;
+    transition: opacity 0.15s;
+}
+
+.add-to-cart-popup:hover {
+    opacity: 0.4;
+}

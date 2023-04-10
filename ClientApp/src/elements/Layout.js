@@ -9,15 +9,19 @@ export class Layout extends Component {
     static displayName = Layout.name;
 
     render() {
+
         return (
             <div>
                 <PromoBanner />
                 <div className="happy-kids-titlecard">
                     happy kids
                 </div>
-                <Navbar />
+                <Navbar
+                    itemsInCart={this.props.itemsInCart}
+                    items={this.props.items}
+                    totalPrice={this.props.totalPrice} />
                 <Container>
-                    {this.props.children}
+                    { this.props.children }
                 </Container>
                 <FooterNavbar />
             </div>

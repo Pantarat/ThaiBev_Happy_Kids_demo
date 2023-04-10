@@ -1,21 +1,241 @@
 [
   {
-    "ProductCode": "sw0001",
-    "Type": "bodysuit",
+    "ProductCode": "SKU:00001",
+    "Type": "T-shirt",
     "Price": 19.99,
     "Colors": [
       {
-        "Name": "black",
-        "ImageUrl": "/path1"
+        "Name": "Green",
+        "ImageUrl": "./assets/productsImg/Product1.png"
       },
       {
-        "Name": "blue",
-        "ImageUrl": "/path2"
+        "Name": "Terracota",
+        "ImageUrl": ""
       }
     ],
     "Sizes": [
-      "2 months",
-      "3 months"
+      "12-18 months",
+      "18-24 months",
+      "2 years",
+      "3 years"
+    ]
+  },
+
+  {
+    "ProductCode": "SKU:00002",
+    "Type": "T-shirt",
+    "Price": 19.99,
+    "Colors": [
+      {
+        "Name": "Peach",
+        "ImageUrl": "./assets/productsImg/Product2.png"
+      },
+      {
+        "Name": "Blue",
+        "ImageUrl": ""
+      }
+    ],
+    "Sizes": [
+      "12-18 months",
+      "18-24 months",
+      "2 years",
+      "3 years"
+    ]
+  },
+
+  {
+    "ProductCode": "SKU:00003",
+    "Type": "T-shirt",
+    "Price": 19.99,
+    "Colors": [
+      {
+        "Name": "White",
+        "ImageUrl": "./assets/productsImg/Product3.png"
+      }
+    ],
+    "Sizes": [
+      "12-18 months",
+      "18-24 months",
+      "2 years",
+      "3 years"
+    ]
+  },
+
+  {
+    "ProductCode": "SKU:00004",
+    "Type": "T-shirt",
+    "Price": 19.99,
+    "Colors": [
+      {
+        "Name": "Light-Pink",
+        "ImageUrl": "./assets/productsImg/Product4.png"
+      }
+    ],
+    "Sizes": [
+      "12-18 months",
+      "18-24 months",
+      "2 years",
+      "3 years"
+    ]
+  },
+
+  {
+    "ProductCode": "SKU:00005",
+    "Type": "T-shirt",
+    "Price": 19.99,
+    "Colors": [
+      {
+        "Name": "White",
+        "ImageUrl": "./assets/productsImg/Product5.png"
+      }
+    ],
+    "Sizes": [
+      "12-18 months",
+      "18-24 months",
+      "2 years",
+      "3 years"
+    ]
+  },
+
+  {
+    "ProductCode": "SKU:00006",
+    "Type": "T-shirt",
+    "Price": 19.99,
+    "Colors": [
+      {
+        "Name": "White",
+        "ImageUrl": "./assets/productsImg/Product6.png"
+      }
+    ],
+    "Sizes": [
+      "12-18 months",
+      "18-24 months",
+      "2 years",
+      "3 years"
+    ]
+  },
+
+  {
+    "ProductCode": "SKU:00007",
+    "Type": "Bodysuit",
+    "Price": 17.99,
+    "Colors": [
+      {
+        "Name": "White",
+        "ImageUrl": "./assets/productsImg/Product7.png"
+      }
+    ],
+    "Sizes": [
+      "0-3 months",
+      "3-6 months",
+      "6-12 months",
+      "12-18 months",
+      "18-24 months",
+      "2 years",
+      "3 years"
+    ]
+  },
+
+  {
+    "ProductCode": "SKU:00008",
+    "Type": "Bodysuit",
+    "Price": 19.99,
+    "Colors": [
+      {
+        "Name": "Cream",
+        "ImageUrl": "./assets/productsImg/Product8.png"
+      }
+    ],
+    "Sizes": [
+      "0-3 months",
+      "3-6 months",
+      "6-12 months",
+      "12-18 months",
+      "18-24 months",
+      "2 years",
+      "3 years"
+    ]
+  },
+
+  {
+    "ProductCode": "SKU:00009",
+    "Type": "Bodysuit",
+    "Price": 19.99,
+    "Colors": [
+      {
+        "Name": "White",
+        "ImageUrl": "./assets/productsImg/Product9.png"
+      }
+    ],
+    "Sizes": [
+      "0-3 months",
+      "3-6 months",
+      "6-12 months",
+      "12-18 months",
+      "18-24 months",
+      "2 years",
+      "3 years"
+    ]
+  },
+
+  {
+    "ProductCode": "SKU:00010",
+    "Type": "Bodysuit",
+    "Price": 19.99,
+    "Colors": [
+      {
+        "Name": "White",
+        "ImageUrl": "./assets/productsImg/Product10.png"
+      }
+    ],
+    "Sizes": [
+      "0-3 months",
+      "6-12 months",
+      "12-18 months",
+      "18-24 months",
+      "2 years",
+      "3 years"
+    ]
+  },
+
+  {
+    "ProductCode": "SKU:00011",
+    "Type": "Bodysuit",
+    "Price": 17.99,
+    "Colors": [
+      {
+        "Name": "Blue",
+        "ImageUrl": "./assets/productsImg/Product11.png"
+      }
+    ],
+    "Sizes": [
+      "0-3 months",
+      "3-6 months",
+      "6-12 months",
+      "12-18 months",
+      "18-24 months",
+      "2 years"
+    ]
+  },
+
+  {
+    "ProductCode": "SKU:00012",
+    "Type": "Bodysuit",
+    "Price": 19.99,
+    "Colors": [
+      {
+        "Name": "Light Pink",
+        "ImageUrl": "./assets/productsImg/Product12.png"
+      }
+    ],
+    "Sizes": [
+      "0-3 months",
+      "6-12 months",
+      "12-18 months",
+      "18-24 months",
+      "2 years",
+      "3 years"
     ]
   }
+
 ]

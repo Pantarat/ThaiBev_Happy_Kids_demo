@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import ProfileIcon from '../assets/ProfileIcon.png';
 import '../styles/LoginMenu.css';
 
 
@@ -23,7 +22,7 @@ export class LoginMenu extends Component {
         return (
             <div>
                 <img
-                    src={ ProfileIcon }
+                    src='./assets/ProfileIcon.png'
                     alt="Click to sign in"
                     onClick={this.handleClick}
                 />

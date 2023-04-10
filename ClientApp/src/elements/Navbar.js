@@ -30,7 +30,10 @@ export class Navbar extends React.Component {
                         <LoginMenu />
                     </div>
                     <div className="shop-cart">
-                        <Cart />
+                        <Cart
+                            itemsInCart={this.props.itemsInCart}
+                            items={this.props.items}
+                            totalPrice={this.props.totalPrice} />
                     </div>
                 </div>
             </div>
