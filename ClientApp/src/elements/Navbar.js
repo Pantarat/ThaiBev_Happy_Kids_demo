@@ -31,6 +31,8 @@ export class Navbar extends React.Component {
                     </div>
                     <div className="shop-cart">
                         <Cart
+                            cartUpdate={this.props.cartUpdate}
+                            isPopupOpen={this.props.isPopupOpen}
                             itemsInCart={this.props.itemsInCart}
                             items={this.props.items}
                             totalPrice={this.props.totalPrice} />

@@ -17,6 +17,8 @@ export class Layout extends Component {
                     happy kids
                 </div>
                 <Navbar
+                    cartUpdate={this.props.cartUpdate}
+                    isPopupOpen={this.props.isPopupOpen }
                     itemsInCart={this.props.itemsInCart}
                     items={this.props.items}
                     totalPrice={this.props.totalPrice} />

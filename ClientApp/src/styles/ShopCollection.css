@@ -1,19 +1,19 @@
-﻿.shop-collection-title {
+﻿.shop-collection {
+    padding-bottom: 100px;
+}
+
+.shop-collection-title {
     margin-top: 30px;
     margin-bottom: 30px;
     text-align: center;
 }
 
 .shop-collection-contents {
-    display: flex;
-}
-
-.filter {
-    flex: 1;
+    display: grid;
+    grid-template-columns: 180px 1fr;
 }
 
 .products-grid {
-    flex: 4;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 20px;

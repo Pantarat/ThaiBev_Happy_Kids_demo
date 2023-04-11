@@ -57,7 +57,12 @@ export class Product extends React.Component {
     handleAddToCart = () => {
         this.props.cartHandler(this.props.productCode, this.props.price, this.state.selectedColor, this.state.selectedSize, this.state.selectedQuantity);
 
-        this.setState({ isProdPopupOpen: false });
+        this.setState({
+            isProdPopupOpen: false,
+            selectedColor: this.props.colors[0],
+            selectedSize: this.props.sizes[0],
+            selectedQuantity: 1,
+        });
     }
 
     componentDidMount() {

@@ -8,8 +8,22 @@ export class ProductsGrid extends React.Component {
         super(props);
         this.state = {
             products: [],
+            queryurl: 'api/Product',
             loading: true
         };
+    }
+
+    componentDidUpdate(prevProps) {
+        if (prevProps.queryurl !== this.props.queryurl) {
+            this.setState(
+                {
+                    loading: false,
+                    queryurl: this.props.queryurl
+                },
+                () => {
+                    this.populateProductsData();
+                })
+        }
     }
 
     componentDidMount = () => {
@@ -40,7 +54,7 @@ export class ProductsGrid extends React.Component {
     }
 
     async populateProductsData() {
-        const response = await fetch('api/Product');
+        const response = await fetch(this.state.queryurl);
         const data = await response.json();
         this.setState({ products: data, loading: false });
     }
